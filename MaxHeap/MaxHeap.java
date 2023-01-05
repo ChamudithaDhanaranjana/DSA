@@ -124,11 +124,3 @@ public class MaxHeap
 }
 
 
-$javac MaxHeap.java
-$java MaxHeap
-The Max Heap is 
- PARENT : 84 LEFT CHILD : 22 RIGHT CHILD :19
- PARENT : 22 LEFT CHILD : 17 RIGHT CHILD :10
- PARENT : 19 LEFT CHILD : 5 RIGHT CHILD :6
- PARENT : 17 LEFT CHILD : 3 RIGHT CHILD :9
-The max val is 84
