@@ -13,3 +13,9 @@ public class MaxHeap
         Heap = new int[this.maxsize + 1];
         Heap[0] = Integer.MAX_VALUE;
     }
+
+    private int parent(int pos)
+    {
+        return pos / 2;
+    }
+ 
