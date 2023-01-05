@@ -211,7 +211,7 @@ class SelfBalancingBinarySearchTree
     }
 }
  
-public class Left_Rotation_BST
+public class RotationOnBST
 {
     public static void main(String[] args)
     {
