@@ -1,1 +1,7 @@
-class BinaryTree{}
+class BinaryTree
+{
+	class Node
+	{
+		
+	}
+}
