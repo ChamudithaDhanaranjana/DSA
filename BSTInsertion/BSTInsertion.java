@@ -1,4 +1,6 @@
 class BSTInsertion{
-
+    class Node{
+      
+    }
 
 }
