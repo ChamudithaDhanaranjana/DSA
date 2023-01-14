@@ -5,11 +5,11 @@ class MergeSort
 		if(array.length <= 1) 
 		{
 			
-			return array;//return the array, if the length of the array is <= 1.
+			return array;//return the array, if the length of the array is <= 1
 			
 		}
 		
-		int mid = array.length / 2; //is the midpoint of the array
+		int mid = array.length / 2; //is the midpoint of the array.
 		
 		int[] left = new int[mid];
 		int[] right;
