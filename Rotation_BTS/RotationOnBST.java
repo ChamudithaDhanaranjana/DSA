@@ -233,7 +233,7 @@ public class RotationOnBST
             System.out.println("\nPost-order :");
             sbbst.postorder();
  
-            System.out.println();
+            System.out.println():
         }
         scan.close();
     }
