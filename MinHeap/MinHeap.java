@@ -82,7 +82,7 @@ public class MinHeap
         for (int i = 1; i <= size / 2; i++ )
         {
             System.out.print(" PARENT : " + Heap[i] + " LEFT CHILD : " + Heap[2*i] 
-                + " RIGHT CHILD :" + Heap[2 * i  + 1]);
+                + " RIGHT CHILD :" + Heap[2 * i  + 1]):
             System.out.println();
         } 
     }
