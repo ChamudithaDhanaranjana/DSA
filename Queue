@@ -1,0 +1,71 @@
+import java.util.ArrayList; // import the ArrayList class
+import java.util.NoSuchElementException​;
+
+interface Queue<T>{
+          public void enqueue(T element);
+          public T dequeue();
+          public T peek();
+          public boolean isEmpty();
+          public void print();
+}
+
+class MyQueue<T> implements Queue<T>{
+
+   private ArrayList<T> list;
+
+   public MyQueue(){
+      list = new ArrayList<T>();
+}
+
+public void enqueue(T element){
+      list.add(element);
+}
+
+public T dequeue(){
+ try {
+      return list.remove(0);
+  }catch(IndexOutOfBoundsException exp){
+      throw new NoSuchElementException("Queue is Emplty.");
+   }
+  }
+public T peek(){
+  try{
+      return list.get(0);
+  }catch(IndexOutOfBoundsException exp){
+    throw new NoSuchElementException("Oueue is Empty");
+  }
+}
+
+ public boolean isEmpty(){
+   return list.isEmpty();
+}
+
+ public void print(){
+  System.out.println(list);
+  }
+}
+
+
+class QueueApp
+{
+   public static void main(String[] args)
+    {
+       Queue queue = new MyQueue<Integer>();
+       queue.enqueue(20);
+       queue.print();
+       queue.enqueue(25);
+       queue.print();
+       queue.enqueue(30);
+       queue.print();
+
+       queue.dequeue();
+       queue.print();
+       queue.dequeue();
+       queue.print();
+       queue.dequeue();
+       queue.print();
+       queue.dequeue();
+            
+  
+  }
+}
